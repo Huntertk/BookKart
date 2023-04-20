@@ -6,9 +6,9 @@ import BestSellerBook from './BestSellerBook'
 const Home = () => {
 
     const [imageRender, setRender] = useState([
-    '../src/assets/images/backgroundbanner1.jpg',
-    '../src/assets/images/backgroundbanner2.jpg',
-    '../src/assets/images/backgroundbanner3.jpg',
+    'https://www.bookswagon.com/images/promotionimages/web/BussinessWeb.jpg?v=1.6',
+    'https://www.bookswagon.com/images/promotionimages/web/tarotcardWeb.jpg?v=1.6',
+    'https://www.bookswagon.com/images/promotionimages/web/ExamWeb.jpg?v=1.6',
     ])
     const [count, setCount] = useState(0)
 
