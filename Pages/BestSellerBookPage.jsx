@@ -82,8 +82,6 @@ const BestSellerBookPage = () => {
     <div className='best-seller-book'>
         <div className="book-top-wrapper">
             <h1 className='bestseller-h1'>Best Selling</h1>
-
-           <NavLink to="/best-selling"><span className='book-page-link'>View All</span></NavLink>
         </div>
         <div className="underline"></div>
         <div className="book-wrapper">

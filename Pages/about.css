@@ -1,0 +1,54 @@
+.top-slogan{
+    text-align: center;
+    font-family: 'Cinzel', sans-serif;
+}
+.frame-img {
+    display: block;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.para {
+    top: 40%;
+    left: 10%;
+    position: absolute;
+    font-size: 1.2rem;
+}
+
+.developer-information {
+    top: 60%;
+    left: 10%;
+    position: absolute;
+    font-size: 1.2rem;
+    width: 40%;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 800px) {
+    .frame-img {
+            display: block;
+            width: 50%;
+            height: 300px;
+            margin: 0 auto;
+        }
+    
+        .para {
+            top: 40%;
+            left: 30%;
+            position: absolute;
+            font-size: 1.2rem;
+            width: 40%;
+        }
+    
+        .developer-information {
+            top: 50%;
+            left: 30%;
+            position: absolute;
+            font-size: 1.2rem;
+            width: 40%;
+            font-family: 'Cinzel', sans-serif;
+            font-weight: 600;
+        }
+}
