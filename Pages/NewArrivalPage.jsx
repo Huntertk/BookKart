@@ -83,7 +83,7 @@ const NewArrivalPage = () => {
   return (
     <div className='best-seller-book'>
         <div className="book-top-wrapper">
-            <h1 className='bestseller-h1'>Best Selling</h1>
+            <h1 className='bestseller-h1'>New Arrival</h1>
         </div>
         <div className="underline"></div>
         <div className="book-wrapper">

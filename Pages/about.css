@@ -10,14 +10,15 @@
 }
 
 .para {
-    top: 40%;
+    top: 30%;
     left: 10%;
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    width: 80%;
 }
 
 .developer-information {
-    top: 60%;
+    top: 40%;
     left: 10%;
     position: absolute;
     font-size: 1.2rem;

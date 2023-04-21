@@ -31,7 +31,7 @@ const Header = () => {
         </div>
 
 
-        <nav className={`nav-links-container ${isOpen === false ? 'show' : null}`}>
+        <nav className={`nav-links-container scale-up-center ${isOpen === false ? 'show ' : null}`}>
             <NavLink 
             to="/best-selling"
             style={({isActive})=> {return isActive ? activeStyle : null}}
