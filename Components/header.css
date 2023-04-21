@@ -92,6 +92,9 @@ a {
         display: none;
     }
 
+    .nav-link{
+        color: #000;
+    }
     .nav-links-container {
         position: unset;
         display: flex;
