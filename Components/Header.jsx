@@ -30,8 +30,6 @@ const Header = () => {
             {isOpen ? <i className="fa-solid fa-x nav-icon"></i> : <i className="fa-solid fa-bars"></i>}
         </div>
 
-         {/* ${isOpen ? "nav-link-open" : "nav-link-close"} */}
-            {/* <i className="fa-solid fa-x nav-icon" onClick={navOpen}></i> */}
 
         <nav className={`nav-links-container ${isOpen === false ? 'show' : null}`}>
             <NavLink 
@@ -39,14 +37,18 @@ const Header = () => {
             style={({isActive})=> {return isActive ? activeStyle : null}}
             >
 
-            <span className='nav-link'>Best Selling</span>
+            <span className='nav-link' onClick={() => {
+              setIsOpen(false)
+            }}>Best Selling</span>
             </NavLink>
 
             <NavLink 
             to="/new-arrival"
             style={({isActive})=> {return isActive ? activeStyle : null}}
             >
-            <span className='nav-link'>New Arrival</span>
+            <span className='nav-link' onClick={() => {
+              setIsOpen(false)
+            }}>New Arrival</span>
             </NavLink>
 
 
@@ -54,7 +56,9 @@ const Header = () => {
             to="/about"
             style={({isActive})=> {return isActive ? activeStyle : null}}
             >
-            <span className='nav-link'>About</span>
+            <span className='nav-link' onClick={() => {
+              setIsOpen(false)
+            }}>About</span>
             </NavLink>
 
             <i className="fa-solid fa-user nav-link user-logo" ></i>
