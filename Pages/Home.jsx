@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import bannerImg from '../src/assets/images/backgroundbanner1.jpg'
 import './home.css'
 import BestSellerBook from './BestSellerBook'
+import NewArrival from './NewArrival'
 
 const Home = () => {
 
@@ -14,16 +15,23 @@ const Home = () => {
 
 
     const pushImageForward = () => {
+
         if(count === imageRender.length-1){
-            setCount(0)
+            setCount((prev) => {
+                return prev = 0;
+            })
         } else if(count > 1) {
-            setCount(imageRender.length-1)
+            setCount((prev) => {
+                return prev = imageRender.length-1;
+            })
         } else{
             setCount((prev) => {
                 return prev + 1
             })
         }
     }
+
+
 
     const pushImageBackward = () => {
         if(count > imageRender.length-1){
@@ -38,14 +46,17 @@ const Home = () => {
     }
     console.log(count)
   return (
+    <>
     <div className='home-container'>
         <img className='home-banner-img' src={imageRender[count]} alt="" />
         <button className='btn image-slider-icon' onClick={pushImageBackward} >⬅️</button>
         <button className='btn image-slider-icon' onClick={pushImageForward}>➡️</button>
-        <div className="book-container">
-            <BestSellerBook />
-        </div>
     </div>
+        <div className="book-containers">
+            <BestSellerBook />
+            <NewArrival />
+        </div>
+    </>
   )
 }
 

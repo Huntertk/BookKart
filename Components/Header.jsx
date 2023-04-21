@@ -21,9 +21,9 @@ const Header = () => {
         </div>
         <nav className={`nav-links-container ${isOpen ? "nav-link-open" : "nav-link-close"}`}>
             <i className="fa-solid fa-x nav-icon" onClick={navOpen}></i>
+            <span className='nav-link'>Best Selling</span>
+            <span className='nav-link'>New Arrival</span>
             <span className='nav-link'>Fiction</span>
-            <span className='nav-link'>Non-Fiction</span>
-            <span className='nav-link'>School</span>
             <span className='nav-link'>About Us</span>
             <i className="fa-solid fa-user nav-link user-logo" ></i>
         </nav>

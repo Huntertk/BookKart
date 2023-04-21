@@ -1,5 +1,9 @@
+.best-seller-book{
+    margin: 3rem auto;
+    text-align: center;
+}
 .book-img{
-    width: 70%;
+    width: 40%;
 }
 .book-container{
     margin-top: 2rem;
@@ -17,6 +21,8 @@
     font-size: 1.1rem;
     color: #F15A59;
     margin-bottom: 0.5em;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
 }
 .book-price{
     font-size: 1.5rem;
@@ -42,4 +48,40 @@
     background-color: transparent;
     color: #F15A59;
 
+}
+.underline{
+    width: 20%;
+    background-color: #000;
+    height: 4px;
+    margin:  0 auto;
+    border-radius: 8px;
+}
+.bestseller-h1{
+    margin: 0;
+    font-family: 'Cinzel', serif;
+}
+@media screen and (min-width: 800px) {
+    .underline{
+        width: 5%;
+    }
+    .best-seller-book{
+        margin:  0 auto;
+    }
+    .book-wrapper{
+        display: flex;
+        padding: 1em; 
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .book-img{
+        width: 150px;
+    }
+    .book-container{
+        margin: 1em;
+        width: 22%;
+    }
+    .book-heading{
+        margin-top: 1em;
+        width: unset;
+    }    
 }
