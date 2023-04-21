@@ -14,6 +14,10 @@
     width: 50px;
     margin-left: 0.54em;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
 .heading{
     font-family: 'Cinzel', serif;
     font-size: 1.3rem;
@@ -24,36 +28,29 @@
 .nav-links-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     padding: 1em;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    color: #fff;
+    top:10%;
+    right: 20%;
     position: absolute;
     transition: all 0.3s linear;
-}
-.nav-link-open{
-    top: 0;
-    right: 0;
-}
-.nav-link-close{
-    top: -100%;
-    right: 0;
 }
 .nav-navigate{
     font-size: 2rem;
 }
 .nav-link{
     font-weight: 500;
-    font-size: 2rem;
-    letter-spacing: 4px;
+    font-size: 1rem;
+    letter-spacing: 2px;
     cursor: pointer;
     padding: 0.31em;
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
     border-radius: 4px;
+    color: #000;
+}
+.show{
+    display: none;
 }
 .user-logo{
     display: none;
@@ -61,14 +58,7 @@
 }
 .nav-link:hover{
     color: #FF6969;
-    border-color: #FF6969;
-}
-.nav-icon{
-    position: absolute;
-    top: 6%;
-    right: 5%;
-    font-size: 2rem;
-    color: yellow;
+
 }
 
 @media screen and (min-width: 800px) {

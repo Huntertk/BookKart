@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import bannerImg from '../src/assets/images/backgroundbanner1.jpg'
 import './home.css'
-import BestSellerBook from './BestSellerBook'
-import NewArrival from './NewArrival'
+import BestSellerBook from '../Components/BestSellerBook'
+import NewArrival from '../Components/NewArrival'
+
 
 const Home = () => {
 

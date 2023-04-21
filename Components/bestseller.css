@@ -60,6 +60,15 @@
     margin: 0;
     font-family: 'Cinzel', serif;
 }
+.book-page-link{
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+}
+.book-page-link:hover{
+    color: #F15A59;
+    text-decoration: underline;
+}
 @media screen and (min-width: 800px) {
     .underline{
         width: 5%;

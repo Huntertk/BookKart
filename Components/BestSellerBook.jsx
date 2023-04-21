@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './bestseller.css'
+import { NavLink } from 'react-router-dom'
 
 const BestSellerBook = () => {
 
@@ -41,7 +42,7 @@ const BestSellerBook = () => {
 
     const renderBooks = bookData.map((book) => {
         return <div key={book.id} className="book-container">
-        <img src={book.img} alt="doglapan" className="book-img" />
+        <img src={book.img} alt={book.name} className="book-img" />
         <p className='book-heading'>{book.name}</p>
         <p className="book-author">By {book.author}</p>
         <p className="book-price">₹{book.salePrice} <span className="fullprice"> (₹{book.fullPrice})</span></p>
@@ -50,7 +51,11 @@ const BestSellerBook = () => {
     })
   return (
     <div className='best-seller-book'>
-        <h1 className='bestseller-h1'>Best Seller</h1>
+        <div className="book-top-wrapper">
+            <h1 className='bestseller-h1'>Best Selling</h1>
+
+           <NavLink to="/best-selling"><span className='book-page-link'>View All</span></NavLink>
+        </div>
         <div className="underline"></div>
         <div className="book-wrapper">
             {renderBooks}
