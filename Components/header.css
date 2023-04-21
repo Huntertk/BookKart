@@ -29,7 +29,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
+    padding: 1rem;
     top:10%;
     right: 20%;
     position: absolute;
@@ -40,7 +40,7 @@ a{
 }
 .nav-link{
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     cursor: pointer;
     padding: 0.31em;
